@@ -1,0 +1,271 @@
+// Remote loader - downloads and evals inject.js from WebSocketServer
+
+var WS_PORT = 40404;
+
+var fs = {
+    write: function(filename, content, callback) {
+        var xhr = new jsmaf.XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && callback) {
+                callback(xhr.status === 0 || xhr.status === 200 ? null : new Error("failed"));
+            }
+        };
+        xhr.open("POST", "file://../download0/" + filename, true);
+        xhr.send(content);
+    },
+    
+    read: function(filename, callback) {
+        var xhr = new jsmaf.XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && callback) {
+                callback(xhr.status === 0 || xhr.status === 200 ? null : new Error("failed"), xhr.responseText);
+            }
+        };
+        xhr.open("GET", "file://../download0/" + filename, true);
+        xhr.send();
+    },
+    
+    delete: function(filename, callback) {
+        var xhr = new jsmaf.XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && callback) {
+                callback(xhr.status === 0 || xhr.status === 200 ? null : new Error("failed"));
+            }
+        };
+        xhr.open("DELETE", "file://../download0/" + filename, true);
+        xhr.send();
+    }
+};
+
+
+try {
+    //allow remoteplay
+    jsmaf.remotePlay = true 
+    
+    
+    // start WebSocket server listening to PS4_IP:WS_PORT 
+    ws = new jsmaf.WebSocketServer();
+    ws.port = WS_PORT;
+
+        
+    jsmaf.root.children.length = 0;
+    
+    
+    var bg_home = new Image({
+        url: "file:///../download0/img/multiview_bg_VAF.png",
+        x: 0,
+        y: 0,
+        width: 1920,
+        height: 1080
+    });
+    jsmaf.root.children.push(bg_home);
+    
+    var logo = new Image({
+        url: "file:///../download0/img/logo.png",
+        x: jsmaf.screenWidth/3.5,
+        y: 220,
+        width: 800,
+        height: 500
+    });
+    jsmaf.root.children.push(logo);
+    
+
+    
+    jsmaf.onKeyDown = function(keyCode) {
+        //1 = l3
+        //2 = r3
+        //3 = options
+        //4 = up
+        //5 = right
+        //6 = down
+        //7 = left
+        //8 + 53= l2
+        //9 + 54= r2
+        //12 = triangle
+        //13 = circle
+        //14 = cross
+        //15 = square
+        //11 = r1
+        //10 = r2
+        //16 = touchpad click
+        //55 = left stick up
+        //56 = left stick right
+        //57 = left stick down
+        //58 = left stick left
+        //59 = right stick up
+        //60 = right stick right
+        //61 = right stick down
+        //62 = right stick left
+
+        //cross pressed
+        if (keyCode === 14) {
+            if(!jsmaf.circleIsAdvanceButton) {
+                include('loader.js')
+            }
+        }
+        //circle pressed
+        else if (keyCode === 13) {
+            if(jsmaf.circleIsAdvanceButton) {
+                include('loader.js')
+            }
+        }
+        //triangle
+        else if (keyCode === 12) {
+            include('payload_host.js')
+        }
+        
+    }
+    
+    
+    
+    // Random image selection for success/fail screens
+    var successImageCount = 50;
+    var failImageCount = 60;
+    var randomSuccessNum = Math.floor(Math.random() * successImageCount) + 1;
+    var randomFailNum = Math.floor(Math.random() * failImageCount) + 1;
+
+    var bg_success = new Image({
+        url: "file:///../download0/img/susec/" + randomSuccessNum + ".jpg",
+        x: 0,
+        y: 0,
+        width: 1920,
+        height: 1080
+    });
+
+    // Background
+    var bg_fail = new Image({
+        url: "file:///../download0/img/feil/" + randomFailNum + ".jpg",
+        x: 0,
+        y: 0,
+        width: 1920,
+        height: 1080
+    });
+    
+
+
+   
+   
+
+
+    // Create text objects for each line
+    var maxLines = 38;
+    var logTextLines = [];
+
+    // Rainbow colors (lighter/pastel for visibility on black)
+    var rainbowColors = [
+        "#FF6B6B", // Light Red
+        "#FFA94D", // Light Orange
+        "#FFD93D", // Light Yellow
+        "#6BCF7F", // Light Green
+        "#4DABF7", // Light Blue
+        "#9775FA", // Light Indigo
+        "#DA77F2"  // Light Violet
+    ];
+
+    // Create text object for each line
+    for (var i = 0; i < maxLines; i++) {
+        var lineText = new jsmaf.Text();
+        lineText.text = "";
+        lineText.background = rainbowColors[i % rainbowColors.length];
+        lineText.x = 20;
+        lineText.y = 120 + (i * 20);
+        jsmaf.root.children.push(lineText);
+        logTextLines.push(lineText);
+    }
+
+    var logBuffer = [];
+
+    // Replace global log() to show on screen
+    _log = function(msg, screen) {
+        if (screen) {
+            logBuffer.push(msg);
+            if (logBuffer.length > maxLines) {
+                logBuffer.shift();
+            }
+
+            // Update each line's text
+            for (var i = 0; i < maxLines; i++) {
+                if (i < logBuffer.length) {
+                    logTextLines[i].text = logBuffer[i];
+                } else {
+                    logTextLines[i].text = "";
+                }
+            }
+        }
+
+        ws.broadcast(msg); // Still send to websocket too
+    }
+    log = function(msg) {
+        _log(`[+] ${msg}`, true)
+    }
+    debug = function(msg) {
+        _log(`[*] ${msg}`, false)
+    }
+    error = function(msg) {
+        _log(`[-] ${msg}`, true)
+    }
+    
+    
+   
+    var needsConfig = false;
+    try {
+        include('config.js')
+        if (typeof CONFIG === 'undefined') {
+            log('CONFIG var missing from config.js, regenerating')
+            needsConfig = true;
+        }
+    }
+    catch(e){
+        log(e.message)
+        log('config.js not found! creating config')
+        needsConfig = true;
+    }
+
+    if (needsConfig) {
+        var config = [
+            'var CONFIG = {',
+            '    autolapse: false,',
+            '    autopoop: false,',
+            '    autoclose: false,',
+            '    music: true,',
+            '    jb_behavior: 0',
+            '};',
+            '',
+            'var payloads = [ //to be ran after jailbroken',
+            '];'
+        ].join('\n');
+        fs.write("config.js", config, function(err) {
+            if (!err) console.log("config.js written");
+            include('config.js');
+        });
+    }
+    
+    if(CONFIG.autolapse){
+        include('loader.js')
+    } else if(CONFIG.autopoop && psn.mainUser.signedIn){
+        CONFIG.jb_behavior = 1
+        include('loader.js')
+    } 
+    else {
+        include('main-menu.js')
+    }
+    
+    // handle WebSocket received messages
+    ws.onmessage = function(c, e) {
+        if (e.data.length === 1 && e.data[0].constructor.name === "String") {
+            try {
+                jsmaf.eval(e.data[0]);
+            } catch(err) {
+                error(err.message);
+                for (var i of err.stack.split('\n')) {
+                    error(i);
+                }
+            }
+        } else {
+            error("Failed to receive valid message !!")
+        }
+    };
+} catch(e) {
+    alert(`${e.message}\n${e.stack}`);
+    //var i = 0;
+}
