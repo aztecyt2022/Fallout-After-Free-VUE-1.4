@@ -1,5 +1,5 @@
 THIS ADDON IS FOR VUE EXPLOIT 1.4
-No not use for any other version as it can mess with the ui
+do not use for any other version as it can mess with the ui
 also 1.4 has fixed some issues that 1.3 and lower has...Please use 1.4 if you wanna use this theme.
 
 
