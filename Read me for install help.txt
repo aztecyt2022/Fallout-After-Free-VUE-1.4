@@ -39,11 +39,12 @@ Themes do not support sfx audio changing at this time.
 
 
 The vue app must be running to do this and you need an active ftp connection.
+
+
+
+
+
 NOTICE FOR DOWNLOAD FOLDER INSTALL
-#######################################
-
-
-
 #####################################################################################################################################
 If the app updated with the install tut above ignore all of this below as its useless.
 cusa in download folder install method.
@@ -58,6 +59,7 @@ __________________________________________________________________________
 ALT LOCATION IT CAN SOMETIMES BE IN CUSA0096002 in the sandbox folder
 ALT LOCATION 2 IT CAN ALSO SOMETIMES BE IN THE DOWNLOAD folder. 
 __________________________________________________________________________
+
 
 
 
