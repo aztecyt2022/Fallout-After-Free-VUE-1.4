@@ -1,0 +1,64 @@
+How to change the ps4 vue theme.
+
+You can use what ever vue theme you want for this.
+
+----------------------------------------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+----------------------------------------------------------------------------------------------------------------
+STEP.1
+To get started your ps4 has to be jailbroken already and the vue app has to be open
+----------------------------------------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+----------------------------------------------------------------------------------------------------------------
+STEP.2
+download or open an ftp client of your choice.
++
+connect to your ps4 system. when connected go to
++
+path #1
+mnt/sandbox/CUSA00960_000/download0/themes place file in here
+you may have to rename to get the theme to work correctly and remove other folders there(Keep a backup)
++
+path #2
+You may also find the themes in mnt/sandbox/download/cusa00960/themes/your file here
+(Not always if you have both then ignore this 1 and only use the path #1)
+----------------------------------------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+----------------------------------------------------------------------------------------------------------------
+Step.3
+after you have added the theme folder you can now reset the vue app and reload it.
++
+this will update the theme.
+----------------------------------------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+----------------------------------------------------------------------------------------------------------------
+possible issues
+
+error finding the folder.
+This error is due to a folder or .js file not being added into the theme folder
+.js names matter and folder names matter. 
+check to make sure all names and file location is correct if any issues showup.
+if you cannot get it to work feel free to ask in the discord using the questions tab for help.
+(VUE AFTER FREE DISCORD)
+
+
+
+The vue app must be running to do this and you need an active ftp connection.
+NOTICE FOR DOWNLOAD FOLDER INSTALL
+#######################################
+
+cusa in download folder install method.
+
+if your cusa is in the download folder then you will need to install the .js and video file manually.
+inside the downloaded file you have
+(INSIDE THE DOWNLOAD0 FOLDER)
+all the files for the cusa will be in there copy all those files from that folder into the cusa00960 folder and restart the app
+
+
+
+__________________________________________________________________________
+
+ALT LOCATION IT CAN SOMETIMES BE IN CUSA0096002 in the sandbox folder
+ALT LOCATION 2 IT CAN ALSO SOMETIMES BE IN THE DOWNLOAD folder. 
+__________________________________________________________________________
+
