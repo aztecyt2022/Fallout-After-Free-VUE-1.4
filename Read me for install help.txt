@@ -16,7 +16,7 @@ download or open an ftp client of your choice.
 connect to your ps4 system. when connected go to
 +
 path #1
-mnt/sandbox/CUSA00960_000/download0/themes place file in here
+mnt/sandbox/CUSA00960_000/download0/themes/your file here
 you may have to rename to get the theme to work correctly and remove other folders there(Keep a backup)
 +
 path #2
@@ -33,13 +33,8 @@ this will update the theme.
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ----------------------------------------------------------------------------------------------------------------
 possible issues
-
-error finding the folder.
-This error is due to a folder or .js file not being added into the theme folder
-.js names matter and folder names matter. 
-check to make sure all names and file location is correct if any issues showup.
-if you cannot get it to work feel free to ask in the discord using the questions tab for help.
-(VUE AFTER FREE DISCORD)
+Audio file may not transfer over if this happens use the download0 folder to get the sfx audio file and replace the 1 in the download0 folder on the ps4.
+Themes do not support sfx audio changing at this time.
 
 
 
@@ -63,5 +58,6 @@ __________________________________________________________________________
 ALT LOCATION IT CAN SOMETIMES BE IN CUSA0096002 in the sandbox folder
 ALT LOCATION 2 IT CAN ALSO SOMETIMES BE IN THE DOWNLOAD folder. 
 __________________________________________________________________________
+
 
 
