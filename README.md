@@ -1,6 +1,6 @@
-THIS ADDON IS FOR VUE EXPLOIT 1.4 and 1.5 
-Downloading the .7zip file in the main repo works with 1.5
-using the release will work with 1.4(Untested for compatibility issues May work fine on both)
+THIS ADDON IS FOR VUE EXPLOIT 1.4 and 1.5.
+Downloading the .7zip file in the main repo works with 1.5.
+using the release will work with 1.4(Untested for compatibility issues May work fine on both).
 
 NOT FOR USE BELOW 1.4
 
