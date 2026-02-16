@@ -6,7 +6,7 @@ Added images may cause issues this is untested as I dont have access to 1.5 as t
 
 Fallout4.2.7zip is my updated version for 1.5(Test version)
 
-Fallout.7zip is earthonions(Use this 1 as the updated one I built has no been tested as of 2026-02-16 @2:12am)
+Fallout.7zip is earthonions(Use this 1 as the updated one I built has not been tested as of 2026-02-16 @2:12am)
 
 
 
