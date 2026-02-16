@@ -4,9 +4,14 @@ Downloading the .7zip file in the main repo works with 1.5.
 without the img the menu will have a black BG...No other issues are present.
 
 
-Fallout4.2.7z is my updated version for 1.5(Test version)
 
-Fallout.7z this is the one that earthonion applied as default.
+
+
+Both files have audio missing and have been removed from this repo for now...
+
+Please use the release version for the corrected audio files and fixes.
+Fallout4.2.7z
+Fallout.7z
 
 
 
