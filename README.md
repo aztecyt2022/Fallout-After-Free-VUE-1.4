@@ -3,6 +3,16 @@ THIS ADDON IS FOR VUE EXPLOIT 1.4 and 1.5.
 Downloading the .7zip file in the main repo works with 1.5.
 Added images may cause issues this is untested as I dont have access to 1.5 as this time.
 
+
+Fallout4.2.7zip is my updated version for 1.5(Test version)
+
+Fallout.7zip is earthonions(Use this 1 as the updated one I built has no been tested as of 2026-02-16 @2:12am)
+
+
+
+
+
+
 using the release will work with 1.4(Untested for compatibility issues May work fine on both).
 
 NOT FOR USE BELOW 1.4
