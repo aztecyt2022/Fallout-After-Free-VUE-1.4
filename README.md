@@ -1,6 +1,7 @@
 THIS ADDON IS FOR VUE EXPLOIT 1.4 and 1.5.
 
 Downloading the .7zip file in the main repo works with 1.5.
+Added images may cause issues this is untested as I dont have access to 1.5 as this time.
 
 using the release will work with 1.4(Untested for compatibility issues May work fine on both).
 
