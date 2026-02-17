@@ -44,21 +44,25 @@ The vue app must be running to do this and you need an active ftp connection.
 
 
 
+BELOW IS A WORST CASE SITUATION AND IS ALMOST ALWAYS NEVER THE CASE.
+
+
 NOTICE FOR DOWNLOAD FOLDER INSTALL
 #####################################################################################################################################
 If the app updated with the install tut above ignore all of this below as its useless.
 cusa in download folder install method.
-if your cusa is in the download folder then you will need to install the .js and video file manually.
+if your cusa is in the download folder then you will need to install the .js and related files manually.
 inside the downloaded file you have all the files for the cusa00960 copy all those files from that folder into the cusa00960 folder and restart the app
 #####################################################################################################################################
 
 
-
+   *rarely they will be here but this is where it was to for me at first.
 __________________________________________________________________________
-    *rarely they will be here but this is where it was to for me at first.
+
 ALT LOCATION IT CAN SOMETIMES BE IN CUSA0096_XXX in the sandbox folder
 ALT LOCATION 2 IT CAN ALSO SOMETIMES BE IN THE DOWNLOAD folder. 
 __________________________________________________________________________
+
 
 
 
