@@ -1,6 +1,6 @@
-How to change the ps4 vue theme.
+* - How to change the ps4 vue theme.
 
-You can use what ever vue theme you want for this.
+* - You can use what ever vue theme you want and still follow this text tut.
 
 ----------------------------------------------------------------------------------------------------------------
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -55,10 +55,11 @@ inside the downloaded file you have all the files for the cusa00960 copy all tho
 
 
 __________________________________________________________________________
-
-ALT LOCATION IT CAN SOMETIMES BE IN CUSA0096002 in the sandbox folder
+    *rarely they will be here but this is where it was to for me at first.
+ALT LOCATION IT CAN SOMETIMES BE IN CUSA0096_XXX in the sandbox folder
 ALT LOCATION 2 IT CAN ALSO SOMETIMES BE IN THE DOWNLOAD folder. 
 __________________________________________________________________________
+
 
 
 
