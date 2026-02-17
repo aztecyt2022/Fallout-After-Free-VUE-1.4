@@ -1,4 +1,6 @@
-THIS ADDON IS FOR VUE EXPLOIT 1.4 and 1.5.
+THIS IS FOR VUE EXPLOIT 1.4 and 1.5.
+
+its not really an addon file its more or less a replacement.
 
 Downloading the .7zip file in the main repo works with 1.5.
 without the img the menu will have a black BG...No other issues are present.
