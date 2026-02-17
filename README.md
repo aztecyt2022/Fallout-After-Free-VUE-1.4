@@ -1,4 +1,5 @@
-THIS IS FOR VUE EXPLOIT 1.4 and 1.5.
+THIS IS FOR Vue After Free 1.4.
+will most likely work with 1.5 also but that is still tbd.
 
 its not really an addon file its more or less a replacement.
 
