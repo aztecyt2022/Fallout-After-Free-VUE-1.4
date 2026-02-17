@@ -1,9 +1,9 @@
 THIS IS FOR Vue After Free 1.4.
-will most likely work with 1.5 also but that is still tbd.
 
 its not really an addon file its more or less a replacement.
 
-Downloading the .7zip file in the main repo works with 1.5.
+Downloading the .7zip file in the main repo works with theme supported update
+1.5 support is still being determined and we are waiting for earthonion to confirm.
 without the img the menu will have a black BG...No other issues are present.
 
 
