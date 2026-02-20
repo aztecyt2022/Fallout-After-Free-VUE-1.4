@@ -7,7 +7,7 @@ Added earthonions version of the fallout4 theme back to the repo as a single dow
 ########################################################################################
 added aztec yt version of the fallout4 theme back to the repo as a single download.
 *->(Has the updated u.i text to look more closer to terminal)
-+->(Overlapping text has been removed in this version)
+*->(Overlapping text has been removed in this version)
 ########################################################################################
 ***1.5 support is still being determined and we are waiting for earthonion to confirm.***
 ########################################################################################
