@@ -1,13 +1,19 @@
 THIS IS FOR Vue After Free 1.4.
 
-
+########################################################################################
 Added earthonions version of the fallout4 theme back to the repo as a single download.
+*
 *->(has the old u.i with no layout fixes)
+*
 *->(Has overlapping text in the payloads menu)
+*
 ########################################################################################
 added aztec yt version of the fallout4 theme back to the repo as a single download.
+*
 *->(Has the updated u.i text to look more closer to terminal)
+*
 *->(Overlapping text has been removed in this version)
+*
 ########################################################################################
 ***1.5 support is still being determined and we are waiting for earthonion to confirm.***
 ########################################################################################
