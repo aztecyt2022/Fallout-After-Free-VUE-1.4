@@ -1,3 +1,12 @@
+
+outdated.
+
+wait for creator to push an update.
+
+do not use above 1.4 atm
+
+
+
 THIS IS FOR Vue After Free 1.4.
 
 ########################################################################################
