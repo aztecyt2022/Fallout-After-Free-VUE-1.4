@@ -21,7 +21,7 @@ added aztec yt version of the fallout4 theme back to the repo as a single downlo
  *->(Overlapping text has been removed in this version)
 
 ########################################################################################
-***1.5 support is still being determined and we are waiting for earthonion to confirm.***
+OOPA
 ########################################################################################
 without the img the menu will have a black BG or the default img. 
 *->(this will not break the vue app)
