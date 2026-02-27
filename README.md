@@ -4,24 +4,16 @@
 - 
 
 ########################################################################################
-Added earthonions version of the fallout4 theme back to the repo as a single download.
-
- *->(has the old u.i with no layout fixes)
-
- *->(Has overlapping text in the payloads menu)
+Added earthonions version of the fallout4 theme to the repo.
 
 ########################################################################################
-added aztec yt version of the fallout4 theme back to the repo as a single download.
-
- *->(Has the updated u.i text to look closer to terminal style)
-
- *->(Overlapping text has been removed in this version)
+added aztec yt version of the fallout4 theme back to the repo.
 
 ########################################################################################
 OOPA
 ########################################################################################
 without the img the menu will have a black BG or the default img. 
-*->(this will not break the vue app)
+*->(this will not break the vue app)(But the theme will not work correctly)
 ########################################################################################
 
 
