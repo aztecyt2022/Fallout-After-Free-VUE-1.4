@@ -1,10 +1,7 @@
 - ################################## *
 - Theme is for Vue After Free 1.4 and 2.0 -
 - ################################## *
-
-
-please download the older versions in the main repo or an older release.
-make sure you have the right version for your vue version.
+- 
 
 ########################################################################################
 Added earthonions version of the fallout4 theme back to the repo as a single download.
