@@ -1,3 +1,13 @@
+
+Ran into issues with the new fallout theme.
+I have removed it from the releases for now
+I will re add when I have fixed some major issues.
+
+
+
+
+
+
 - ################################## *
 - Theme is for Vue After Free 1.4 and 2.0 -
 - ################################## *
